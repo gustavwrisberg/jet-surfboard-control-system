@@ -26,7 +26,7 @@ It integrates embedded controllers, wireless communication, and a high-power pro
 ---
 
 ### Wiring Diagram
-![Wiring Diagram](diagrams/wiring_diagram.png)
+![Wiring Diagram](wiring_diagram.png)
 
 **Highlights:**
 - Color-coded wires for clarity:
