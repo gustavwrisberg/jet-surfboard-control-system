@@ -38,6 +38,20 @@ It integrates embedded controllers, wireless communication, and a high-power pro
 
 ---
 
+## Build & Flash
+Build & Flash Instructions
+Install Arduino IDE or PlatformIO.
+Install dependencies:
+- Adafruit_SSD1306
+- Adafruit_GFX
+- ESP32 board definitions
+Connect ESP32 to your PC.
+run the read mac adress simulator, and write that into the code of the opposite controller.
+
+Open controller.ino or bridge.ino.
+Select the correct board (ESP32 Dev Module) and COM port.
+Click Upload.
+
 ## Code Reference
 ### Controller (Throttle + OLED)
 ```cpp
