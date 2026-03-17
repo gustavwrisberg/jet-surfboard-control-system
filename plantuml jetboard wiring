@@ -1,0 +1,30 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor Black
+  RoundCorner 10
+}
+skinparam ArrowColor Blue
+skinparam ArrowThickness 2
+
+' ---------- Components ----------
+rectangle "ESP32 VESC Bridge\nVIN, GND, TX17, RX16" as Bridge
+rectangle "VESC Motor Controller\nUART In/Out, 3-phase BLDC Out" as VESC
+rectangle "Motor + Propulsion\n3-phase BLDC" as Motor
+rectangle "Battery Pack\n10s5p Li-ion, 72VDC" as Battery
+
+' ---------- Power Lines ----------
+Battery --> VESC : "72VDC Power" #Red
+Battery --> Bridge : "5V Logic / Health" #Red
+
+' ---------- Grounds ----------
+Battery --> VESC : "GND" #Black
+Battery --> Bridge : "GND" #Black
+
+' ---------- Motor Control ----------
+VESC --> Motor : "3-phase BLDC U/V/W" #Green
+
+' ---------- UART (Throttle/Telemetry) ----------
+Bridge -[#Blue]-> VESC : "TX17 → UART RX"
+Bridge <-[#Blue]- VESC : "RX16 ← UART TX"
+@enduml
