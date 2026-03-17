@@ -11,7 +11,7 @@ It integrates embedded controllers, wireless communication, and a high-power pro
 - **Battery Pack:** Custom 10s5p Li-ion (Enpower INR21700-30SG)
 - **Wireless Charging Pad:** For 3.7V cells powering the controller
 
-> ⚠️ Most components are off-the-shelf to reduce cost and accelerate prototyping.  
+> Most components are off-the-shelf to reduce cost and accelerate prototyping.  
 
 ---
 
