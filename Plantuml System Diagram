@@ -1,0 +1,62 @@
+@startuml
+' =========================================
+' Jet Surfboard Control System Wiring Diagram
+' =========================================
+
+skinparam rectangle {
+  BackgroundColor #E0F7FA
+  BorderColor #006064
+  FontSize 12
+  FontColor #004D40
+}
+
+skinparam arrow {
+  Color #00796B
+  Thickness 2
+}
+
+' -----------------
+' Controller Section
+' -----------------
+rectangle "ESP32 Controller" as Controller #B2EBF2
+rectangle "OLED Display\n(I2C SDA/SCL)" as OLED #FFF9C4
+rectangle "SS495A Hall Sensor\n(Analog Input)" as HallSensor #FFCCBC
+
+' -----------------
+' Bridge Section
+' -----------------
+rectangle "ESP32 VESC Bridge" as Bridge #C8E6C9
+
+' -----------------
+' Motor Section
+' -----------------
+rectangle "VESC Motor Controller" as VESC #FFECB3
+rectangle "Motor + Propulsion\n(3-phase BLDC)" as Motor #FFE0B2
+
+' -----------------
+' Power Section
+' -----------------
+rectangle "Battery Pack 10s5p\n72V max 150A" as Battery #D1C4E9
+rectangle "3.7V Li-ion Cell" as Cell #F8BBD0
+rectangle "Wireless Charging Pad" as Charger #F0F4C3
+
+' =========================================
+' Connections
+' =========================================
+HallSensor --> Controller : Analog Signal
+OLED --> Controller : I2C SDA/SCL
+Controller --> Bridge : ESP-NOW Throttle
+Bridge --> VESC : UART Throttle
+VESC --> Bridge : Telemetry + 5V
+Bridge --> Controller : ESP-NOW Telemetry
+VESC --> Motor : 3-phase BLDC
+Battery --> VESC : 72V Power
+Battery --> Bridge : Battery Health
+Charger --> Cell : Charge
+Cell --> Controller : 3.7V Supply
+
+' Optional layout tweaks
+Controller -[hidden]-> Bridge
+Battery -[hidden]-> VESC
+Cell -[hidden]-> Controller
+@enduml
