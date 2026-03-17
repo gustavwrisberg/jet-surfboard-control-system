@@ -1,0 +1,46 @@
+@startuml
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor Black
+  RoundCorner 10
+}
+
+' ---------- Components ----------
+rectangle "ESP32 Controller\nVIN, GND, ADC34, GPIO21(SDA), GPIO22(SCL), EN" as ESP32
+rectangle "SS495A Hall Sensor\nVCC 3.3V, GND, Signal → ADC34" as Hall
+rectangle "OLED Display 128x64\nSDA → GPIO21, SCL → GPIO22, VCC 3.3V, GND" as OLED
+rectangle "On/Off Switch\nEN toggles VIN" as Switch
+rectangle "TP4057 Battery Charger\nUSB-C In / B+ / B- / OUT+ / OUT-" as TP4057
+rectangle "Wireless Charger Receiver\n(Type-C adapter for TP4057)" as Wireless
+rectangle "Li-ion Battery\nSingle cell 3.7V" as Battery
+
+' ---------- Connections ----------
+
+' Power from TP4057 OUT+ → On/Off switch → ESP32 VIN & Hall VCC & OLED VCC
+TP4057 --> Switch : "OUT+ (Red 3.3-5V)"
+Switch --> ESP32 : "VIN"
+Switch --> Hall : "VCC 3.3V"
+Switch --> OLED : "VCC 3.3V"
+
+' Grounds
+Battery --> TP4057 : "B- / GND"
+TP4057 --> ESP32 : "OUT- / GND"
+TP4057 --> Hall : "GND"
+TP4057 --> OLED : "GND"
+
+' Li-ion battery
+Battery --> TP4057 : "B+"
+
+' Wireless charging input
+Wireless --> TP4057 : "USB-C Input"
+
+' Signals
+Hall --> ESP32 : "Signal → ADC34"
+OLED --> ESP32 : "SDA → GPIO21"
+OLED --> ESP32 : "SCL → GPIO22"
+
+' Optional styling
+skinparam ArrowColor Blue
+skinparam ArrowThickness 2
+
+@enduml
