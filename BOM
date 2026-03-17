@@ -1,28 +1,29 @@
 These are all the part purchased, not all parts were used.
 
-| Category                  | Component                            | Qty      | AliExpress Link                                                  |
-| ------------------------- | ------------------------------------ | -------- | ---------------------------------------------------------------- |
-| **Controller**            | ESP32-C3 Mini WiFi + BT              | 2        | [Link](https://www.aliexpress.com/item/1005006476900011.html)    |
-| **Controller**            | ESP32-S / ESP32-32 30Pin Type-C      | 2        | [Link](https://www.aliexpress.com/item/1005006476900011.html)    |
-| **Controller**            | SS495A Hall Sensor                   | 5        | [Link](https://www.aliexpress.com/item/1005008190654562.html)    |
-| **Controller**            | OLED 0.96" SSD1306 I2C               | 2        | [Link](https://www.aliexpress.com/item/1005007663345442.html)    |
-| **Controller**            | On/Off Push Button 12mm Waterproof   | 6        | [Link](https://www.aliexpress.com/item/3059770950329137.html)    |
-| **Controller**            | TP4057 Single-cell Li-ion Charger    | 5        | [Link](https://www.aliexpress.com/item/1005007551197717.html)    |
-| **Controller**            | Type-C Wireless Charger Receiver     | 1        | [Link](https://www.aliexpress.com/item/1005008190654562.html)    |
-| **Controller**            | 3.7V Li-ion Single Cell              | 4        | [Link](https://www.aliexpress.com/item/3059770950369137.html)    |
-| **Motor / Drive**         | VESC 84200HP 84V 200A                | 1        | [Link](https://www.aliexpress.com/item/1005007481064183.html)    |
-| **Motor / Drive**         | BLDC Motor 56114KV500                | 1        | [Link](https://www.aliexpress.com/item/3059220483769137.html)    |
-| **Motor / Drive**         | 72V / 84V 5A Li-ion Charger          | 1        | [Link](https://www.aliexpress.com/item/1005001290964499137.html) |
-| **Battery / Power**       | 18650 / 21700 Li-ion Cells           | Multiple | [Link](https://www.aliexpress.com/item/1005009374520125.html)    |
-| **Battery / Power**       | W-Type Nickel Strip 2P               | 2        | [Link](https://www.aliexpress.com/item/3062718778489137.html)    |
-| **Battery / Power**       | ANT Smart BMS 17–24S 50–420A         | 1        | [Link](https://www.aliexpress.com/item/3059571613489137.html)    |
-| **Battery / Power**       | XT60 Male / Female Connectors        | 2        | [Link](https://www.aliexpress.com/item/3057922484589137.html)    |
-| **Battery / Power**       | XT60 Parallel / Y-Splitter Cable     | 1        | [Link](https://www.aliexpress.com/item/3057922484439137.html)    |
-| **Battery / Power**       | PVC Heat Shrink Tube / Battery Wrap  | 2 m      | [Link](https://www.aliexpress.com/item/3062083935259137.html)    |
-| **Battery / Power**       | 18650 Insulation / Barley Paper      | 2        | [Link](https://www.aliexpress.com/item/3059571613559137.html)    |
-| **Battery / Power**       | Fireproof Lipo Safety Bag            | 1        | [Link](https://www.aliexpress.com/item/3057922484629137.html)    |
-| **Mechanical / Mounting** | Acrylic Plates / Perspex 100x100x1mm | 2        | [Link](https://www.aliexpress.com/item/3062718778509137.html)    |
-| **Mechanical / Mounting** | Kapton Tape 33M / 40mm               | 1        | [Link](https://www.aliexpress.com/item/3062718778529137.html)    |
-| **Mechanical / Mounting** | Thermal Pads / Peltier / Heat Blocks | Multiple | [Various links]                                                  |
-| **Mechanical / Mounting** | Bearings / Shafts / RC Accessories   | Multiple | [Various links]                                                  |
-| **Electrical / Wiring**   | Wire, connectors, heat shrink tubing | –        | –                                                                |
+| Category                  | Component                            | Qty      | AliExpress / Thingiverse Link                                               |
+| ------------------------- | ------------------------------------ | -------- | --------------------------------------------------------------------------- |
+| **Controller Enclosure**  | 3D Printed Controller Case           | 1        | [Thingiverse 2781808](https://www.thingiverse.com/thing:2781808)            |
+| **Controller**            | ESP32-C3 Mini WiFi + BT              | 2        | [AliExpress Link](https://www.aliexpress.com/item/1005006476900011.html)    |
+| **Controller**            | ESP32-S / ESP32-32 30Pin Type-C      | 2        | [AliExpress Link](https://www.aliexpress.com/item/1005006476900011.html)    |
+| **Controller**            | SS495A Hall Sensor                   | 5        | [AliExpress Link](https://www.aliexpress.com/item/1005008190654562.html)    |
+| **Controller**            | OLED 0.96" SSD1306 I2C               | 2        | [AliExpress Link](https://www.aliexpress.com/item/1005007663345442.html)    |
+| **Controller**            | On/Off Push Button 12mm Waterproof   | 6        | [AliExpress Link](https://www.aliexpress.com/item/3059770950329137.html)    |
+| **Controller**            | TP4057 Single-cell Li-ion Charger    | 5        | [AliExpress Link](https://www.aliexpress.com/item/1005007551197717.html)    |
+| **Controller**            | Type-C Wireless Charger Receiver     | 1        | [AliExpress Link](https://www.aliexpress.com/item/1005008190654562.html)    |
+| **Controller**            | 3.7V Li-ion Single Cell              | 4        | [AliExpress Link](https://www.aliexpress.com/item/3059770950369137.html)    |
+| **Motor / Drive**         | VESC 84200HP 84V 200A                | 1        | [AliExpress Link](https://www.aliexpress.com/item/1005007481064183.html)    |
+| **Motor / Drive**         | BLDC Motor 56114KV500                | 1        | [AliExpress Link](https://www.aliexpress.com/item/3059220483769137.html)    |
+| **Motor / Drive**         | 72V / 84V 5A Li-ion Charger          | 1        | [AliExpress Link](https://www.aliexpress.com/item/1005001290964499137.html) |
+| **Battery / Power**       | 18650 / 21700 Li-ion Cells           | Multiple | [AliExpress Link](https://www.aliexpress.com/item/1005009374520125.html)    |
+| **Battery / Power**       | W-Type Nickel Strip 2P               | 2        | [AliExpress Link](https://www.aliexpress.com/item/3062718778489137.html)    |
+| **Battery / Power**       | ANT Smart BMS 17–24S 50–420A         | 1        | [AliExpress Link](https://www.aliexpress.com/item/3059571613489137.html)    |
+| **Battery / Power**       | XT60 Male / Female Connectors        | 2        | [AliExpress Link](https://www.aliexpress.com/item/3057922484589137.html)    |
+| **Battery / Power**       | XT60 Parallel / Y-Splitter Cable     | 1        | [AliExpress Link](https://www.aliexpress.com/item/3057922484439137.html)    |
+| **Battery / Power**       | PVC Heat Shrink Tube / Battery Wrap  | 2 m      | [AliExpress Link](https://www.aliexpress.com/item/3062083935259137.html)    |
+| **Battery / Power**       | 18650 Insulation / Barley Paper      | 2        | [AliExpress Link](https://www.aliexpress.com/item/3059571613559137.html)    |
+| **Battery / Power**       | Fireproof Lipo Safety Bag            | 1        | [AliExpress Link](https://www.aliexpress.com/item/3057922484629137.html)    |
+| **Mechanical / Mounting** | Acrylic Plates / Perspex 100x100x1mm | 2        | [AliExpress Link](https://www.aliexpress.com/item/3062718778509137.html)    |
+| **Mechanical / Mounting** | Kapton Tape 33M / 40mm               | 1        | [AliExpress Link](https://www.aliexpress.com/item/3062718778529137.html)    |
+| **Mechanical / Mounting** | Thermal Pads / Peltier / Heat Blocks | Multiple | [AliExpress / Generic Links]                                                |
+| **Mechanical / Mounting** | Bearings / Shafts / RC Accessories   | Multiple | [AliExpress / Generic Links]                                                |
+| **Electrical / Wiring**   | Wire, connectors, heat shrink tubing | –        | –                                                                           |
